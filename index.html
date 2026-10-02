@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Carter | Creative Frontend Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">&lt;<span class="gradient-text">Dev</span>/&gt;</a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-content">
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          <span>Available for New Projects</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Building the <span class="gradient-text">Future</span> of the Web.
+        </h1>
+        
+        <p class="hero-subtitle">
+          I am a <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+        </p>
+
+        <p class="hero-desc">
+          Crafting responsive, high-performance web applications with clean architecture and cutting-edge visual experiences.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary ripple-btn">
+            View Featured Work <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-glass ripple-btn">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills / Tech Stack Section -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Core <span class="gradient-text">Stack</span></h2>
+          <p class="section-subtitle">Technologies and tools powering my solutions</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card glass-panel">
+            <i class="fa-brands fa-html5 skill-icon" style="color: #e34f26;"></i>
+            <h3>HTML5 & Semantics</h3>
+            <p>SEO-optimized semantic layout & modern accessibility patterns.</p>
+          </div>
+
+          <div class="skill-card glass-panel">
+            <i class="fa-brands fa-css3-alt skill-icon" style="color: #1572b6;"></i>
+            <h3>CSS3 & Modern Layouts</h3>
+            <p>Flexbox, CSS Grid, custom properties & keyframe animations.</p>
+          </div>
+
+          <div class="skill-card glass-panel">
+            <i class="fa-brands fa-square-js skill-icon" style="color: #f7df1e;"></i>
+            <h3>Modern JavaScript</h3>
+            <p>ES6+, Async/Await, DOM manipulation & API integrations.</p>
+          </div>
+
+          <div class="skill-card glass-panel">
+            <i class="fa-brands fa-git-alt skill-icon" style="color: #f05032;"></i>
+            <h3>Git & GitHub</h3>
+            <p>Version control, continuous integration and collaborative workflows.</p>
+          </div>
+
+          <div class="skill-card glass-panel">
+            <i class="fa-solid fa-mobile-screen-button skill-icon" style="color: #00f2fe;"></i>
+            <h3>Responsive UI/UX</h3>
+            <p>Fluid, mobile-first design adaptable to all display viewports.</p>
+          </div>
+
+          <div class="skill-card glass-panel">
+            <i class="fa-solid fa-bolt skill-icon" style="color: #a855f7;"></i>
+            <h3>Performance Tuning</h3>
+            <p>High Lighthouse scores, fast assets and zero-lag rendering.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Interactive prototypes and production applications</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card glass-panel" data-tilt>
+            <div class="project-image">
+              <div class="mockup-screen">
+                <span class="mock-dot red"></span>
+                <span class="mock-dot yellow"></span>
+                <span class="mock-dot green"></span>
+              </div>
+              <div class="project-badge">Dashboard</div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span>Vanilla JS</span>
+                <span>CSS Grid</span>
+                <span>REST API</span>
+              </div>
+              <h3>Nexus Analytics Dashboard</h3>
+              <p>Real-time financial telemetry with dark mode data visualization, responsive graphs, and caching.</p>
+              <div class="project-links">
+                <a href="#" class="link-btn"><i class="fa-brands fa-github"></i> Repository</a>
+                <a href="#" class="link-btn preview-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass-panel" data-tilt>
+            <div class="project-image">
+              <div class="mockup-screen">
+                <span class="mock-dot red"></span>
+                <span class="mock-dot yellow"></span>
+                <span class="mock-dot green"></span>
+              </div>
+              <div class="project-badge">E-Commerce</div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>LocalStorage</span>
+                <span>Flexbox</span>
+              </div>
+              <h3>Aura Cyber Apparel</h3>
+              <p>Minimalist futuristic apparel storefront with responsive checkout, local storage cart, and modal views.</p>
+              <div class="project-links">
+                <a href="#" class="link-btn"><i class="fa-brands fa-github"></i> Repository</a>
+                <a href="#" class="link-btn preview-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Experience Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <h2 class="section-title">Driven by <span class="gradient-text">Precision</span></h2>
+            <p>
+              I bridge the gap between design vision and clean code architecture. My journey as a frontend developer revolves around building interactive platforms that feel alive, intuitive, and lightning-fast.
+            </p>
+            <p>
+              Focusing on standard-compliant semantic markup, responsive layouts, and performance optimization across all major browsers.
+            </p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card glass-panel">
+              <span class="stat-number" data-target="99">0</span><span class="stat-suffix">%</span>
+              <span class="stat-label">Lighthouse Score</span>
+            </div>
+            <div class="stat-card glass-panel">
+              <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-card glass-panel">
+              <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+              <span class="stat-label">Clean Code Commitment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card glass-panel">
+          <div class="section-header">
+            <h2 class="section-title">Start a <span class="gradient-text">Conversation</span></h2>
+            <p class="section-subtitle">Have an opening, a project idea, or just want to connect?</p>
+          </div>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="John Doe" required />
+                <span class="error-msg">Please enter your name</span>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="john@example.com" required />
+                <span class="error-msg">Valid email required</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Let's build something remarkable..." required></textarea>
+              <span class="error-msg">Please enter a brief message</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block ripple-btn" id="submitBtn">
+              Send Message <i class="fa-regular fa-paper-plane"></i>
+            </button>
+            <div class="form-feedback" id="formFeedback"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Alex Carter. Built with Vanilla Web Standards.</p>
+      <div class="social-links">
+        <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
